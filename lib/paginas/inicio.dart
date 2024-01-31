@@ -1003,7 +1003,7 @@ PopupMenuItem _buildPopupMenuItem(
                 Icon(iconData, color: Colors.black,),
                 _statusBanda==1
                 ?
-                Text('Desactivar Banda')
+                Text('Parar Banda')
                 :
                 Text('Activar Banda'),
                 

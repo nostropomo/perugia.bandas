@@ -268,7 +268,7 @@ scanBarcode() async {
                //codeDialog = valueText;
                 setState(() {
                    ///actualizar dato------------
-                  actualizarEstiloBanda(int.parse(_id_estilo.toString()), int.parse(_id_fabrica.toString()),0,int.parse(_id_programa.toString()), int.parse(status_banda.toString()),1, id_usuario);
+                  actualizarEstiloBanda(int.parse(_id_estilo.toString()), int.parse(_id_fabrica.toString()),int.parse(_tiempo.toString()),int.parse(_id_programa.toString()), int.parse(status_banda.toString()),1, id_usuario);
                  });
               
                // if (int.parse(codeDialog.toString()) <= _existencia) {
@@ -319,7 +319,7 @@ scanBarcode() async {
     else
     bandaActiva=1;
     EasyLoading.show(status: 'cargando...');
-    Services.actualizarEstilo(_id_estilo,_id_fabrica,id_usuario,tiempo,id_proceso,_programa,bandaActiva).then((usersFromServer) {
+    Services.actualizarEstilo(_id_estilo,_id_fabrica,id_usuario,_tiempo,id_proceso,_programa,bandaActiva).then((usersFromServer) {
       EasyLoading.dismiss();
       setState(() {
         FocusScope.of(context).unfocus();
