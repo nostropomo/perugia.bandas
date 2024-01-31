@@ -288,7 +288,7 @@ class _inicioState extends State<inicio> {
             _onMenuItemSelected(value as int);
           },
           itemBuilder: (ctx) => [
-           _buildPopupMenuItem('Detener Banda', Icons.stop_circle_outlined, 1, statusBanda),
+           _buildPopupMenuItem('Parar Banda', Icons.stop_circle_outlined, 1, statusBanda),
             //_buildPopupMenuItem('Estilos', Icons.article, 2,statusBanda),
             //_buildPopupMenuItem('Leer Lote', Icons.barcode_reader, 3,statusBanda),
            
